@@ -13,3 +13,27 @@ output "cloudwatch_log_group" {
 output "cloudwatch_alarm" {
   value = module.cloudwatch.alarm_name
 }
+
+output "raw_bucket" {
+  value = module.s3.raw_bucket
+}
+
+output "curated_bucket" {
+  value = module.s3.curated_bucket
+}
+
+output "aggregated_bucket" {
+  value = module.s3.aggregated_bucket
+}
+
+output "glue_database" {
+  value = module.glue.glue_database_name
+}
+
+output "glue_role" {
+  value = module.glue.glue_role_arn
+}
+
+output "firehose_stream" {
+  value = module.firehose.firehose_name
+}
