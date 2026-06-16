@@ -39,3 +39,12 @@ module "firehose" {
 
   raw_bucket_arn = module.s3.raw_bucket_arn
 }
+
+module "athena" {
+  source = "./modules/athena"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  glue_database_name = module.glue.glue_database_name
+}

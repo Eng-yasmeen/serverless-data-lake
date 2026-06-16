@@ -37,3 +37,7 @@ output "glue_role" {
 output "firehose_stream" {
   value = module.firehose.firehose_name
 }
+
+output "athena_workgroup" {
+  value = module.athena.athena_workgroup
+}
