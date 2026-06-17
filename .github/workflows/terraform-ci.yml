@@ -9,6 +9,11 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+    env:
+      TF_VAR_aws_region: us-east-1
+      TF_VAR_project_name: serverless-data-lake
+      TF_VAR_environment: dev
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
