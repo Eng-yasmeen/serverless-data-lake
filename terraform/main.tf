@@ -30,7 +30,7 @@ module "glue" {
   raw_bucket     = module.s3.raw_bucket
   curated_bucket = module.s3.curated_bucket
 }
-
+/*
 module "firehose" {
   source = "./modules/firehose"
 
@@ -39,7 +39,7 @@ module "firehose" {
 
   raw_bucket_arn = module.s3.raw_bucket_arn
 }
-
+*/
 module "athena" {
   source = "./modules/athena"
 
