@@ -13,3 +13,7 @@ output "aggregated_bucket" {
 output "raw_bucket_arn" {
   value = aws_s3_bucket.raw.arn
 }
+
+output "athena_results_bucket" {
+  value = aws_s3_bucket.athena_results.bucket
+}

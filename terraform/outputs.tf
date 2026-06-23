@@ -41,3 +41,7 @@ output "firehose_stream" {
 output "athena_workgroup" {
   value = module.athena.athena_workgroup
 }
+
+output "athena_results_bucket" {
+  value = module.s3.athena_results_bucket
+}
